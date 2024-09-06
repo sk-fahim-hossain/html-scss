@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.sofax-section {
+  padding: 130px 0px;
+  background-color: #000;
+}
+.sofax-section .sofax-section-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.sofax-section .sofax-section-image {
+  width: 100%;
+  text-align: center;
+}
+.sofax-section .sofax-section-heading {
+  color: white;
+  font-size: 76px;
+}
+.sofax-section .sofax-section-sub-heading {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.sofax-section .sofax-section-button {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  background-color: #E5ABF3;
+  border: none;
+}
+.sofax-section .sofax-section-button span {
+  display: inline-block;
+  position: relative;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.sofax-section .sofax-section-button::after {
+  display: inline-block;
+  content: "View all Integration";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  color: black;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.sofax-section .sofax-section-button:hover span {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+.sofax-section .sofax-section-button:hover::after {
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  opacity: 1;
+}
+
+footer {
+  background-color: #ffffff;
+  color: #747474;
+  font-size: 20px;
+}
+footer .footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 0 90px;
+}
+@media (min-width: 768px) {
+  footer .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+footer .footer-section {
+  margin: 10px 0;
+}
+footer .footer-section p {
+  color: #747474;
+}
+@media (min-width: 768px) {
+  footer .footer-section {
+    margin: 0;
+  }
+}
+footer .footer-section h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #0E0E0E;
+}
+footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-section ul li {
+  margin-bottom: 5px;
+}
+footer .footer-section ul li a {
+  color: #747474;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding-bottom: 5px;
+}
+footer .footer-section ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.4s ease;
+}
+footer .footer-section ul li a:hover::after {
+  width: 100%;
+}
+footer .footer-first-section .logo-wrap {
+  margin-bottom: 20px;
+}
+footer .footer-first-section .social-media-icons {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-first-section .social-media-icons ul {
+  display: flex;
+  margin-top: 20px;
+}
+footer .footer-first-section .social-media-icons ul li {
+  display: inline-block;
+}
+footer .footer-first-section .social-media-icons ul li a {
+  background-color: #F9F9FA;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border: 1px solid #F9F9FA;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: all 0.4s;
+  border-radius: 50px;
+  align-items: center;
+  transition: all 0.4s;
+  justify-content: center;
+}
+footer .footer-first-section .social-media-icons ul li a:hover {
+  text-decoration: none;
+  background-color: #E5ABF3;
+}
+footer .footer-second-section {
+  justify-self: center;
+  align-self: normal;
+}
+footer .footer-third-section {
+  display: flex;
+  justify-self: center;
+}
+footer .footer-fourth-section {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-self: normal;
+}
+footer .footer-fourth-section .store-links {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-fourth-section .store-links a {
+  text-decoration: none;
+}
+footer .footer-fourth-section .store-links a img {
+  width: 100%;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-bottom: 15px;
+}
+footer .footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #bdc3c7;
+  padding: 30px 0;
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
